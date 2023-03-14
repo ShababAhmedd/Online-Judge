@@ -22,7 +22,7 @@ for i in range(t):
       moves += 1
       #print("Moves_1: ", moves)
       a -= 1
-      #print("a-1:",a)    # The 1 that is substracted from here is the extra 1 that was added in line 10.
+      #print("a-1:",a)    # The 1 that is substracted from here is the extra 1 that was added in line number 18.
       moves += 1
       #print("moves_2:", moves)
       print(moves)
@@ -61,7 +61,7 @@ for i in range(t):
       moves += 1
       #print("Moves_1:", moves)
       a -= 1
-      #print("a-1:", a)    # Decrementing a by 1 since one extra 1 was added in line number 45.
+      #print("a-1:", a)    # Decrementing a by 1 since one extra 1 was added in line number 57.
       moves += 1
       #print("Moves_2:", moves)
       print(moves)
