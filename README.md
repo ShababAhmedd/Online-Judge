@@ -3,7 +3,7 @@ This repository contains solutions of various problems that I solved on differen
 
 <br></br>
 
-Notes Link:
+Notes Link:<br></br>
 https://github.com/kabbya/Contest-Programming-Training
 
 <br></br>
