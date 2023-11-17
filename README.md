@@ -1,5 +1,5 @@
 # Online-Judge
-This repository contains solutions of various problems that I solved on different online judges.
+This repository contains solutions to various problems I solved on online judges.
 
 <br></br>
 # Profile Links
