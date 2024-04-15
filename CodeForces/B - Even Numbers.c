@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main(){
-    int i, n, sum;
-    sum = 0;
+    int n, i;
     scanf("%d", &n);
-    for(i=1; i<=n; i++){
-        if (i%2==0){
-        printf("%d \n", i);
-        sum++;
-        }
-    }
-    if (sum==0){
+    if (n==1){
         printf("-1");
+    }
+    else{
+        for(i=1; i<=n; i++){
+            if (i%2==0){
+                printf("%d \n", i);
+            }
+        }
     }
     return 0;
 }
