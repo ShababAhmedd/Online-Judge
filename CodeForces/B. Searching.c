@@ -25,3 +25,5 @@ int main(){
     return 0;
 }
 
+
+// https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/B
