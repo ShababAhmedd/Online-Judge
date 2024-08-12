@@ -49,3 +49,20 @@
 |------------------|--------------------------------------|-----------------|
 | `v.begin()`      | Pointer to the first element.        | O(1)            |
 | `v.end()`        | Pointer to the last element.         | O(1)            |
+
+
+
+### Constructing a vector with N elements and V values
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> v(5, 0);
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+
+    return 0;
+}
+```
