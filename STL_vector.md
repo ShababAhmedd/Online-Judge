@@ -73,8 +73,6 @@ int main() {
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 int main() {
     vector<int> v1(5, 100);
     vector<int> v2(v1);
@@ -88,9 +86,43 @@ int main() {
 ```
 
 
+### Constructing a vector by copying an array
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    int len = sizeof(arr) / sizeof(arr[0]);
+    vector<int> v(arr, arr + len);
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << endl;
+    }
 
 
+    return 0;
+}
+```
 
+
+### Initializing a vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> v = {1, 2, 3, 4, 5};
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+
+
+    return 0;
+}
+```
+
+
+### x
 
 
 
