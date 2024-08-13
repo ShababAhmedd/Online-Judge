@@ -66,3 +66,35 @@ int main() {
     return 0;
 }
 ```
+
+
+### Constructing a vector by copying another vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main() {
+    vector<int> v1(5, 100);
+    vector<int> v2(v1);
+    for (int i = 0; i < v1.size(); i++) {
+        cout << v1[i] << endl;
+    }
+
+
+    return 0;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
