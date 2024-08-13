@@ -138,7 +138,41 @@ int main() {
 ```
 
 
+### Changing the size of the vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
 
+int main() {
+    vector<int> v = {10, 20, 30, 40, 50};
+    v.resize(2);
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << endl;
+    }
+
+    return 0;
+}
+```
+
+
+### Clearing the size of the vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> v = {10, 20, 30};
+    v.clear();
+    cout << v[0] << " " << v[1] << " " << v[2] << endl;
+    cout << "===================" << endl;
+    cout << v.size() << endl;
+    for (int i = 0; i < v.size(); i++) {   
+        cout << v[i] << endl;
+    }
+
+    return 0;
+}
+```
 
 
 
