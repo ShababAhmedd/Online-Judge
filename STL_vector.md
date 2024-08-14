@@ -175,5 +175,23 @@ int main() {
 ```
 
 
+### Assigning another vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> x = {10, 20, 30};
+    vector<int> y = {1, 2, 3};
+    x = y;
+
+    for (int i = 0; i < x.size(); i++) {
+        cout << x[i] << " ";
+    }
+
+    return 0;
+}
+```
+
 
 
