@@ -288,8 +288,7 @@ int main() {
 ```
 
 
-<h3>Replacing element upto a certain index</h3>
-
+### Replacing element upto certain index
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
