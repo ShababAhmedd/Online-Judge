@@ -8,11 +8,11 @@ int main() {
     cin >> n >> q;
 
     int a[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {    // O(n)
         cin >> a[i];
     }
 
-    while (q--) {
+    while (q--) {    // O(nq)
         int l, r;
         cin >> l >> r;
         l--;
@@ -29,7 +29,7 @@ int main() {
 ```
 
 
-### Prefix sum array
+### Prefix sum array `O(q)`
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -39,18 +39,18 @@ int main() {
     cin >> n >> q;
 
     int a[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {    // O(n)
         cin >> a[i];
     }
 
     // Generating prefix sum array
     long long pre[n];
     pre[0] = a[0];
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) {    // O(n)
         pre[i] = a[i] + pre[i - 1];
     }
 
-    while (q--) {
+    while (q--) {    // O(q)
         int l, r;
         cin >> l >> r;
         l--;
