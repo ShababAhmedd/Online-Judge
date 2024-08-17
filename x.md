@@ -1,4 +1,4 @@
-### Range sum query ~ `O(qn)`
+### Range sum query `O(qn)`
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
