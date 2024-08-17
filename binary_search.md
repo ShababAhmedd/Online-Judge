@@ -1,4 +1,4 @@
-### Linear search
+### Linear search    `O(qn)`
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -8,15 +8,15 @@ int main() {
     cin >> n >> q;
 
     int a[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {    // O(n)
         cin >> a[i];
     }
 
-    while (q--) {
+    while (q--) {    // O(q)
         int x;
         cin >> x;
         bool flag = false;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {    // O(n)
             if (a[i] == x) {
                 flag = true;
                 break;
