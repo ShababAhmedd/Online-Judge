@@ -12,13 +12,13 @@ int main() {
         cin >> a[i];
     }
 
-    while (q--) {    // O(nq)
+    while (q--) {    // O(q)
         int l, r;
         cin >> l >> r;
         l--;
         r--;
         int sum = 0;
-        for (int i = l; i <= r; i++) {
+        for (int i = l; i <= r; i++) {    // O(n)
             sum += a[i];
         }
         cout << sum << endl;
