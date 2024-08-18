@@ -84,3 +84,45 @@ Given the constraints, a linear search for each query would be too slow. Instead
 2. For each query, check if `X` is in the set (or use binary search to check if `X` is present).
 
 This will ensure that each query is processed in logarithmic time, making the solution efficient even for large inputs.
+
+
+### Binary search `O(nlogn)`
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n, q;
+    cin >> n >> q;
+    int arr[n];
+    for (int i = 0; i < n; i++) {   // O(n)
+        cin >> arr[i];
+    }
+
+    sort(arr, arr + n);     // O(nlogn)
+
+    while (q--) {   // O(q)
+        int x;
+        cin >> x;
+        bool flag = false;
+        int l = 0, r = n - 1;
+        while (l <= r) {    // O(logn)
+            int mid = (l + r) / 2;
+            if (arr[mid] == x) {
+                flag = true;
+                break;
+            }
+            if (x > arr[mid]) {
+                l = mid + 1;
+            }
+            if (x < arr[mid]) {
+                r = mid - 1;
+            }
+        }
+        if (flag == true) cout << "found" << endl;
+        else cout << "not found" << endl;
+    }
+
+    return 0;
+}
+```
