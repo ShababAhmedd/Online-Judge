@@ -90,10 +90,11 @@ For each query, print a single line that contains the summation of all numbers f
 1 6
 ```
 #### Example Output 1:
+```
 12
 18
 28
-
+```
 
 #### Example 2:
 ```
@@ -104,6 +105,8 @@ For each query, print a single line that contains the summation of all numbers f
 1 4
 ```
 #### Example Output 2:
+```
 12
 7
 15
+```
