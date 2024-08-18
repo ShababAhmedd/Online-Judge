@@ -81,4 +81,29 @@ Given two numbers `N` and `Q`, an array `A` of `N` numbers and `Q` number of pai
 For each query, print a single line that contains the summation of all numbers from index `L` to index `R`.
 
 ### Example Input
+#### Example 1:
+```
+6 3
+6 4 2 7 2 7
+1 3
+3 6
+1 6
+```
+#### Example Output 1:
+12
+18
+28
 
+
+#### Example 2:
+```
+4 3
+5 5 2 3
+1 3
+2 3
+1 4
+```
+#### Example Output 2:
+12
+7
+15
