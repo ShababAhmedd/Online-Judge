@@ -64,12 +64,21 @@ int main() {
     return 0;
 }
 ```
-Sample test case:
-```
-6 3
-6 4 2 7 2 7
-1 3
-3 6
-1 6
 
-```
+## Problem Statement
+Given two numbers `N` and `Q`, an array `A` of `N` numbers and `Q` number of pairs `(L, R)`. For each query, print a single line that contains the summation of all numbers from index `L` to index `R`.
+
+### Input
+- The first line contains two integers `N`, `Q` (`1 ≤ N, Q ≤ 10^5`) where:
+  - `N` is the number of elements in array `A`.
+  - `Q` is the number of query pairs.
+  
+- The second line contains `N` integers (`1 ≤ A[i] ≤ 10^9`), the elements of array `A`.
+
+- The next `Q` lines each contain two integers `L, R` (`1 ≤ L ≤ R ≤ N`), representing the range for the sum query.
+
+### Output
+For each query, print a single line that contains the summation of all numbers from index `L` to index `R`.
+
+### Example Input
+
