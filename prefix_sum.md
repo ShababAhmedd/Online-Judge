@@ -110,3 +110,29 @@ For each query, print a single line that contains the summation of all numbers f
 7
 15
 ```
+
+### Explanation
+For the first example:
+
+1. The first query `(1, 3)` asks for the sum of the first 3 elements: `6 + 4 + 2 = 12`.
+2. The second query `(3, 6)` asks for the sum from the 3rd to the 6th element: `2 + 7 + 2 + 7 = 18`.
+3. The third query `(1, 6)` asks for the sum of all elements: `6 + 4 + 2 + 7 + 2 + 7 = 28`.
+
+For the second example:
+
+1. The first query `(1, 3)` asks for the sum of the first 3 elements: `5 + 5 + 2 = 12`.
+2. The second query `(2, 3)` asks for the sum of the 2nd and 3rd elements: `5 + 2 = 7`.
+3. The third query `(1, 4)` asks for the sum of all elements: `5 + 5 + 2 + 3 = 15`.
+
+### Constraints
+- `1 ≤ N, Q ≤ 10^5`
+- `1 ≤ A[i] ≤ 10^9`
+- `1 ≤ L ≤ R ≤ N`
+
+### Approach
+Given the constraints, a direct summation for each query would be too slow (O(N * Q) in the worst case). Instead, the problem can be efficiently solved using a **prefix sum array**.
+
+1. Precompute a prefix sum array `prefixSum` where:
+   - `prefixSum[i] = prefixSum[i-1] + A[i]`
+2. For each query `(L, R)`, the sum is:
+   - `prefixSum[R] - prefixSum[L-1]`
