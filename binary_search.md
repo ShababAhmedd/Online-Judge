@@ -31,9 +31,6 @@ int main() {
 ```
 
 
-
-# Problem: Number Existence Queries
-
 ## Problem Description
 You are given:
 - Two integers `N` and `Q`.
