@@ -64,3 +64,12 @@ int main() {
     return 0;
 }
 ```
+```
+Sample test case:
+6 3
+6 4 2 7 2 7
+1 3
+3 6
+1 6
+
+```
