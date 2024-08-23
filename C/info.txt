@@ -1,0 +1,6 @@
+Data Types:
+1. Int - 4 byte
+2. Float - 4 byte
+3. Double - 8 byte
+4. Char - 1 byte
+5. Void - 1 byte
