@@ -121,7 +121,7 @@ int main() {
 ```
 
 
-### Inserting node at any position
+### Inserting node 
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -175,3 +175,8 @@ int main() {
 }
 ```
 
+
+### Deleting node
+```C++
+
+```
