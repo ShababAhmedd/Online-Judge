@@ -158,7 +158,6 @@ void insert_at_position(Node *&head, int pos, int val) {
         newNode->next = temp->next;
         temp->next = newNode;
     }
-
 }
 
 int main() {
