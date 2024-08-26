@@ -144,14 +144,21 @@ void print_linked_list(Node *head) {
     }
 }
 
-void insert_at_position(Node *head, int pos, int val) {
+void insert_at_position(Node *&head, int pos, int val) {
     Node *newNode = new Node(val);
     Node *temp = head;
-    for (int i = 0; i < pos - 1; i++) {
-        temp = temp->next;
+    if (pos == 0) {
+        newNode->next = head;
+        head = newNode;
     }
-    newNode->next = temp->next;
-    temp->next = newNode;
+    else {
+        for (int i = 0; i < pos - 1; i++) {
+            temp = temp->next;
+        }
+        newNode->next = temp->next;
+        temp->next = newNode;
+    }
+
 }
 
 int main() {
@@ -162,7 +169,7 @@ int main() {
     head->next = a;
     a->next = b;
 
-    insert_at_position(head, 1, 101);
+    insert_at_position(head, 0, 101);
     print_linked_list(head);
 
     return 0;
