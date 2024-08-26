@@ -119,3 +119,53 @@ int main() {
     return 0;
 }
 ```
+
+
+### Inserting node at any position
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node {
+public:
+    int val;
+    Node *next;
+    Node(int val) {
+        this->val = val;
+        this->next = NULL;
+    }
+};
+
+void print_linked_list(Node *head) {
+    Node *temp = head;
+    while (temp != NULL) {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+}
+
+void insert_at_position(Node *head, int pos, int val) {
+    Node *newNode = new Node(val);
+    Node *temp = head;
+    for (int i = 0; i < pos - 1; i++) {
+        temp = temp->next;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
+int main() {
+    Node *head = new Node(10);
+    Node *a = new Node(20);
+    Node *b = new Node(30);
+
+    head->next = a;
+    a->next = b;
+
+    insert_at_position(head, 1, 101);
+    print_linked_list(head);
+
+    return 0;
+}
+```
+
