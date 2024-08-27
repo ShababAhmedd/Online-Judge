@@ -209,6 +209,14 @@ void deleteNode(Node *&head, int pos) {
         Node *temp = head;
         for (int i = 0; i < pos - 1; i++) {
             temp = temp->next;
+            if (temp == NULL) {
+                cout << "Invalid Index given" << endl;
+                return;
+            }
+        }
+        if (temp->next == NULL) {
+            cout << "Invalid Index" << endl;
+            return;
         }
         Node *deleteNode = temp->next;
         temp->next = temp->next->next;
@@ -232,7 +240,7 @@ int main() {
     (*head).next = a;
     (*a).next = b;
 
-    deleteNode(head, 0);
+    deleteNode(head, 3);
     print_linked_list(head);
 
     return 0;
