@@ -198,7 +198,7 @@ public:
 void deleteNode(Node *&head, int pos) {
     if (pos == 0) {
         Node *deleteNode = head;
-        head = (*head).next;
+        head = head->next;
         delete deleteNode;
     }
     else {
@@ -215,8 +215,8 @@ void deleteNode(Node *&head, int pos) {
 void print_linked_list(Node *head) {
     Node *temp = head;
     while (temp != NULL) {
-        cout << (*temp).val << " " ;
-        temp = (*temp).next;
+        cout << temp->val << " " ;
+        temp = temp->next;
     }
 }
 
