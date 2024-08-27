@@ -102,19 +102,23 @@ public:
     }
 };
 
+void print_linked_list(Node *head) {
+    Node *temp = head;
+    while (temp != NULL) {
+        cout << (*temp).val << " " ;
+        temp = (*temp).next;
+    }
+}
+
 int main() {
     Node *head = new Node(10);
     Node *a = new Node(20);
     Node *b = new Node(30);
 
-    head->next = a;
-    a->next = b;
+    (*head).next = a;
+    (*a).next = b;
 
-    Node *temp = head;
-    while (temp != NULL) {
-        cout << temp->val << endl;
-        temp = temp->next;
-    }
+    print_linked_list(head);
 
     return 0;
 }
