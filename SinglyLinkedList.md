@@ -140,27 +140,27 @@ public:
     }
 };
 
-void print_linked_list(Node *head) {
-    Node *temp = head;
-    while (temp != NULL) {
-        cout << temp->val << " ";
-        temp = temp->next;
-    }
-}
-
-void insert_at_position(Node *&head, int pos, int val) {
+void insertNode(Node *&head, int pos, int val) {
     Node *newNode = new Node(val);
     Node *temp = head;
     if (pos == 0) {
-        newNode->next = head;
+        (*newNode).next = head;
         head = newNode;
     }
     else {
         for (int i = 0; i < pos - 1; i++) {
-            temp = temp->next;
+            temp = (*temp).next;
         }
-        newNode->next = temp->next;
-        temp->next = newNode;
+        (*newNode).next = (*temp).next;
+        (*temp).next = newNode;
+    }
+}
+
+void print_linked_list(Node *head) {
+    Node *temp = head;
+    while (temp != NULL) {
+        cout << (*temp).val << " " ;
+        temp = (*temp).next;
     }
 }
 
@@ -169,10 +169,10 @@ int main() {
     Node *a = new Node(20);
     Node *b = new Node(30);
 
-    head->next = a;
-    a->next = b;
+    (*head).next = a;
+    (*a).next = b;
 
-    insert_at_position(head, 0, 101);
+    insertNode(head, 0, 101);
     print_linked_list(head);
 
     return 0;
