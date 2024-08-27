@@ -150,6 +150,10 @@ void insertNode(Node *&head, int pos, int val) {
     else {
         for (int i = 0; i < pos - 1; i++) {
             temp = (*temp).next;
+            if (temp == NULL) {
+                cout << "Invalid index given" << endl;
+                return;
+            }
         }
         (*newNode).next = (*temp).next;
         (*temp).next = newNode;
@@ -172,7 +176,7 @@ int main() {
     (*head).next = a;
     (*a).next = b;
 
-    insertNode(head, 0, 101);
+    insertNode(head, 100, 101);
     print_linked_list(head);
 
     return 0;
