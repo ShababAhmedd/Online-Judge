@@ -1,6 +1,6 @@
 # Doubly Linked List
 ### Print
-#### In Sequence
+###### In Sequence
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -48,7 +48,7 @@ int main() {
 ```
 
 
-#### Reverse
+###### Reverse
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
