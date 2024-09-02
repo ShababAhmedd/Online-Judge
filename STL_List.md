@@ -269,8 +269,8 @@ int main() {
     return 0;
 }
 ```
-
-### Adding tail
+### Adding
+###### tail
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -287,7 +287,7 @@ int main() {
 }
 ```
 
-### Adding head
+###### head
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -304,7 +304,8 @@ int main() {
 }
 ```
 
-### Deleting tail
+### Deleting 
+###### tail
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -321,7 +322,7 @@ int main() {
 }
 ```
 
-### Deleting head
+###### head
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -354,7 +355,8 @@ int main() {
 }
 ```
 
-### Inserting elements
+### Inserting 
+###### elements
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -371,3 +373,59 @@ int main() {
     return 0;
 }
 ```
+
+###### list
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    list<int> l = {100, 200, 300};
+    mylist.insert(next(mylist.begin(), 2), l.begin(), l.end());  // O(n+k)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
+###### Vector
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    vector<int> v = {100, 200, 300};
+    mylist.insert(next(mylist.begin(), 2), v.begin(), v.end());  // O(n+k)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
+###### Array
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    int arr[] = {100, 200, 300};
+    int len = sizeof(arr) / sizeof(arr[0]);
+    mylist.insert(next(mylist.begin(), 2), arr, arr + len); // O(n+k)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
