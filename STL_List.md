@@ -164,7 +164,7 @@ int main() {
 ```
 
 <br></br>
-### size of a list
+### maximum size of a list
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
