@@ -62,6 +62,7 @@
 
 <br></br>
 # Code templates
+## Constructor
 ### Initializing
 ```C++
 #include<bits/stdc++.h>
@@ -164,6 +165,7 @@ int main() {
 ```
 
 <br></br>
+## Capacity
 ### maximum size of a list
 ```C++
 #include<bits/stdc++.h>
@@ -247,3 +249,22 @@ int main() {
 }
 ```
 <br></br>
+
+## Modifiers
+### Assigning another list
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    list<int> newList;
+    newList = mylist;
+
+    for (int val : newList) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
