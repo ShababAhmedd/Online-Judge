@@ -337,3 +337,20 @@ int main() {
     return 0;
 }
 ```
+
+### Inserting elements
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    mylist.insert(next(mylist.begin(), 2), 100);
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
