@@ -61,7 +61,6 @@
 
 
 <br></br>
-
 # Code templates
 ### Initializing
 ```C++
@@ -77,10 +76,6 @@ int main() {
     return 0;
 }
 ```
-
-<br>
-
-</br>
 
 ### Iterating
 ###### using pointer
@@ -114,9 +109,7 @@ int main() {
 }
 ```
 
-<br>
-</br>
-
+<br></br>
 ### Copying
 ###### from another list
 ```C++
