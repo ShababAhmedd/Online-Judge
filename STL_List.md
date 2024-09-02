@@ -259,6 +259,7 @@ using namespace std;
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
     list<int> newList;
+    // newList.assign(mylist.begin(), mylist.end());
     newList = mylist;
 
     for (int val : newList) {
