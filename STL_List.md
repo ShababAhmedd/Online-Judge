@@ -345,7 +345,7 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    mylist.insert(next(mylist.begin(), 2), 100);    //O(n)
+    mylist.insert(next(mylist.begin(), 2), 100);    // O(n)
 
     for (int val : mylist) {
         cout << val << " ";
