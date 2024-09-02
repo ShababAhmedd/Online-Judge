@@ -304,6 +304,7 @@ int main() {
 }
 ```
 
+<br></br>
 ### Deleting 
 ###### tail
 ```C++
