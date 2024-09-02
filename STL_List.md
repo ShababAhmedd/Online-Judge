@@ -259,8 +259,8 @@ using namespace std;
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
     list<int> newList;
-    // newList.assign(mylist.begin(), mylist.end());
-    newList = mylist;
+    // newList.assign(mylist.begin(), mylist.end());    // O(n)
+    newList = mylist;    // O(n)
 
     for (int val : newList) {
         cout << val << " ";
@@ -277,7 +277,7 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    mylist.push_back(100);
+    mylist.push_back(100);    // O(1)
 
     for (int val : mylist) {
         cout << val << " ";
@@ -294,7 +294,7 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    mylist.push_front(100);
+    mylist.push_front(100);    // O(1)
 
     for (int val : mylist) {
         cout << val << " ";
@@ -311,7 +311,7 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    mylist.pop_back();
+    mylist.pop_back();    // O(1)
 
     for (int val : mylist) {
         cout << val << " ";
@@ -328,7 +328,7 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    mylist.pop_front();
+    mylist.pop_front();    // O(1)
 
     for (int val : mylist) {
         cout << val << " ";
