@@ -194,6 +194,7 @@ int main() {
 }
 ```
 
+<br></br>
 ### Resizing
 ###### Increasing size
 ```C++
@@ -228,3 +229,4 @@ int main() {
     return 0;
 }
 ```
+<br></br>
