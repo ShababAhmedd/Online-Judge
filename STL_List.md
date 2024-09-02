@@ -58,3 +58,20 @@
 | -------------------- | ------------------------------------------ | --------------- |
 | `myList.begin()`     | Pointer to the first element.              | O(1)            |
 | `myList.end()`       | Pointer to the last element.               | O(1)            |
+
+
+
+### Initializing list
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // list<int> mylist;
+    list<int> mylist(10, 5);
+    cout << mylist.size() << endl;
+    cout << mylist.front() << endl;
+
+    return 0;
+}
+```
