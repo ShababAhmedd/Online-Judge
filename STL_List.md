@@ -468,3 +468,23 @@ int main() {
     return 0;
 }
 ```
+
+<br></br>
+### Checking if an element is present
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    auto it = find(mylist.begin(), mylist.end(), 1);    // O(n)
+    if (it == mylist.end()) {
+        cout << "Not Found" << endl;
+    }
+    else {
+        cout << "Found" << endl;
+    }
+
+    return 0;
+}
+```
