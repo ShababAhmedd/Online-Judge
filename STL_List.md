@@ -286,3 +286,38 @@ int main() {
     return 0;
 }
 ```
+
+### Adding head
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    mylist.push_front(100);
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
+### Deleting tail
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    mylist.pop_back();
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
