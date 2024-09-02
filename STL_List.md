@@ -99,7 +99,25 @@ using namespace std;
 
 int main() {
     list<int> l = {1, 2, 3, 4, 5};
-    list<int> mylist(l);
+    list<int> mylist(l);    // O(n)
+
+    for (auto it = mylist.begin(); it != mylist.end(); it++) {
+        cout << *it << " ";
+    }
+
+    return 0;
+}
+```
+
+### Copying from an array
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int len = sizeof(arr) / sizeof(arr[0]);
+    list<int> mylist(arr, arr + len);
 
     for (auto it = mylist.begin(); it != mylist.end(); it++) {
         cout << *it << " ";
