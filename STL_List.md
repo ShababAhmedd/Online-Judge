@@ -337,6 +337,22 @@ int main() {
     return 0;
 }
 ```
+### Erasing elements
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    mylist.erase(next(mylist.begin(), 3));  // O(n)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
 
 ### Inserting elements
 ```C++
