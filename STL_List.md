@@ -194,7 +194,8 @@ int main() {
 }
 ```
 
-### resizing
+### Resizing
+###### Increasing size
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -202,6 +203,23 @@ using namespace std;
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
     mylist.resize(2);
+    cout << mylist.size() << endl;
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
+###### Decreasing size
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    mylist.resize(10);
     cout << mylist.size() << endl;
     for (int val : mylist) {
         cout << val << " ";
