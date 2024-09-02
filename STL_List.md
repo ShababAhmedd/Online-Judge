@@ -60,7 +60,7 @@
 | `myList.end()`       | Pointer to the last element.               | O(1)            |
 
 
-
+# Code templates
 ### Initializing
 ```C++
 #include<bits/stdc++.h>
@@ -76,7 +76,6 @@ int main() {
 }
 ```
 
-
 ### Iterating
 ```C++
 #include<bits/stdc++.h>
@@ -85,6 +84,23 @@ using namespace std;
 int main() {
     // list<int> mylist;
     list<int> mylist(10, 5);
+    for (auto it = mylist.begin(); it != mylist.end(); it++) {
+        cout << *it << " ";
+    }
+
+    return 0;
+}
+```
+
+### Copying from another list
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> l = {1, 2, 3, 4, 5};
+    list<int> mylist(l);
+
     for (auto it = mylist.begin(); it != mylist.end(); it++) {
         cout << *it << " ";
     }
