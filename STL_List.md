@@ -451,3 +451,20 @@ int main() {
 }
 ```
 
+<br></br>
+### Replacing element
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    replace(mylist.begin(), mylist.end(), 1, 100);
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
