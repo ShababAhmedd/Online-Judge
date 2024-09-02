@@ -80,6 +80,10 @@ int main() {
 }
 ```
 
+<br>
+
+</br>
+
 ### Iterating
 ###### using pointer
 ```C++
@@ -111,6 +115,10 @@ int main() {
     return 0;
 }
 ```
+
+<br>
+
+</br>
 
 ### Copying
 ###### from another list
