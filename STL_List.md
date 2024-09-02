@@ -60,6 +60,10 @@
 | `myList.end()`       | Pointer to the last element.               | O(1)            |
 
 
+<br>
+
+</br>
+
 # Code templates
 ### Initializing
 ```C++
@@ -161,4 +165,5 @@ int main() {
 }
 ```
 
-###
+
+
