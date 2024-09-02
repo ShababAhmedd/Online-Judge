@@ -77,6 +77,7 @@ int main() {
 ```
 
 ### Iterating
+###### using pointer
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -91,8 +92,24 @@ int main() {
     return 0;
 }
 ```
+###### using range based for loop
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+
+    return 0;
+}
+```
+
 ### Copying
-#### from another list
+###### from another list
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -109,7 +126,7 @@ int main() {
 }
 ```
 
-#### from an array
+###### from an array
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -127,7 +144,7 @@ int main() {
 }
 ```
 
-#### from a vector
+###### from a vector
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -143,3 +160,5 @@ int main() {
     return 0;
 }
 ```
+
+###
