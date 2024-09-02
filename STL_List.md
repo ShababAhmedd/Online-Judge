@@ -60,7 +60,7 @@
 | `myList.end()`       | Pointer to the last element.               | O(1)            |
 
 
-<br> </br>
+<br></br>
 
 # Code templates
 ### Initializing
