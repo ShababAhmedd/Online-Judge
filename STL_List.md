@@ -568,7 +568,33 @@ using namespace std;
 
 int main() {
     list<int> mylist = {1, 2, 3, 4, 5};
-    cout << mylist.front() << endl;
+    cout << mylist.front() << endl;    // O(1)
+
+    return 0;
+}
+```
+
+### Accessing Tail
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    cout << mylist.back() << endl;    // O(1)
+
+    return 0;
+}
+```
+
+### Accessing Ith element
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    cout << *next(mylist.begin(), 2) << endl;  // O(1)
 
     return 0;
 }
