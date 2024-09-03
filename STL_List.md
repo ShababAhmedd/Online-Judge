@@ -539,4 +539,6 @@ int main() {
     }
     return 0;
 }
+
+// "myList.unique()" --> This can only remove duplicates successfully if the list is sorted.
 ```
