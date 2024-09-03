@@ -48,7 +48,7 @@ int main() {
 ```
 
 
-###### Reverse
+###### Reverse print using recursion
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -95,7 +95,66 @@ int main() {
 }
 ```
 
+###### Reversing Doubly linked list
+```C++
+#include<bits/stdc++.h>
+using namespace std;
 
+class Node {
+public:
+    Node *prev;
+    int val;
+    Node *next;
+    Node(int val) {
+        this->prev = NULL;
+        this->val = val;
+        this->next = NULL;
+    }
+};
+
+void reverse(Node *head, Node *tail) {
+    Node *i = head;
+    Node *j = tail;
+    while (i != j && i->next != j) {
+        swap(i->val, j->val);
+        i = i->next;
+        j = j->prev;
+    }
+    swap(i->val, j->val);
+}
+
+void printLinkedList(Node *head) {
+    Node *temp = head;
+    while (temp != NULL) {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+int main() {
+    Node *head = new Node(10);
+    Node *a = new Node(20);
+    Node *b = new Node(30);
+    Node *tail = new Node(40);
+
+    head->next = a;
+    a->next = b;
+    b->next = tail;
+
+    tail->prev = b;
+    b->prev = a;
+    a->prev = head;
+
+    reverse(head, tail);
+    printLinkedList(head);
+
+
+    return 0;
+}
+```
+
+<br></br>
 ### Insertion
 ```C++
 #include<bits/stdc++.h>
@@ -325,3 +384,4 @@ int main() {
     return 0;
 }
 ```
+
