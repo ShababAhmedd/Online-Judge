@@ -515,6 +515,7 @@ using namespace std;
 int main() {
     list<int> mylist = {1, 5, 2, 5, 3, 5, 4, 5, 5};
     mylist.sort();   // O(NlogN)
+    // mylist.sort(greater<int>()); 
 
     for (int val : mylist) {
         cout << val << " ";
