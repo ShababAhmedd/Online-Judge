@@ -491,3 +491,18 @@ int main() {
 
 <br></br>
 ## Operations
+### Removing elements
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 5, 2, 5, 3, 5, 4, 5, 5};
+    mylist.remove(5);   // O(n)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+    return 0;
+}
+```
