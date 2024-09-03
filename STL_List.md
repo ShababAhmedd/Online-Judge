@@ -515,7 +515,24 @@ using namespace std;
 int main() {
     list<int> mylist = {1, 5, 2, 5, 3, 5, 4, 5, 5};
     mylist.sort();   // O(NlogN)
-    // mylist.sort(greater<int>()); 
+    // mylist.sort(greater<int>());    // O(NlogN)
+
+    for (int val : mylist) {
+        cout << val << " ";
+    }
+    return 0;
+}
+```
+
+### Deleting duplicate values
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 5, 2, 5, 3, 5, 4, 5, 5};
+    mylist.sort();  // O(NlogN)
+    mylist.unique();    // O(n)
 
     for (int val : mylist) {
         cout << val << " ";
