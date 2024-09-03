@@ -558,3 +558,18 @@ int main() {
     return 0;
 }
 ```
+
+<br></br>
+## Element Access
+### Accessing head
+```C++
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> mylist = {1, 2, 3, 4, 5};
+    cout << mylist.front() << endl;
+
+    return 0;
+}
+```
