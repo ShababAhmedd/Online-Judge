@@ -198,7 +198,7 @@ int main() {
 
 <br></br>
 ### Resizing
-###### Increasing size
+###### Decreasing size
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
@@ -215,7 +215,7 @@ int main() {
 }
 ```
 
-###### Decreasing size
+###### Increasing size
 ```C++
 #include<bits/stdc++.h>
 using namespace std;
